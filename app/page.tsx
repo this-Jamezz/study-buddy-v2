@@ -1,9 +1,17 @@
-import Image from "next/image";
+import FormChat from "./components/forms/FormChat";
+import Header from "./components/Header"
+import Default from "./templates/Default";
 
 export default function Home() {
   return (
-    <div >
-    <p>Hello Bulsu</p>   
-    </div>
+    <Default>
+      <div className="w-6xl h-full">
+       <div className="w-md mx-auto">
+        <p className="font-bold text-4xl text-center">Hello Guest!</p>
+        <p className="font-extralight text-sm text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam iusto recusandae laborum animi nihil, sit non nostrum aliquid sequi nemo ex officiis optio alias quis earum dicta quae mollitia labore.</p>
+       </div>
+       <FormChat/>
+      </div>
+    </Default>
   );
 }
